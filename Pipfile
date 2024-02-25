@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 py-mon = ">=2.0"
+tabulate = ">=0.9"
 
 [scripts]
 test = "pymon ./paws-n-cart.py"
