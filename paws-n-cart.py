@@ -2,6 +2,8 @@ from shop_items import shop_items
 
 from tabulate import tabulate
 
+# ---------------------------------- CONSTANTS --------------------------------- #
+TABULATE_HEADER_OPTION = "firstrow"
 
 # ---------------------------------- Backend --------------------------------- #
 cart = {
@@ -56,7 +58,7 @@ def view_cart():
 
     # Printing result
     print("\n  Current Cart")
-    print(tabulate(cart_table, headers="firstrow"))
+    print(tabulate(cart_table, headers=TABULATE_HEADER_OPTION))
     print(f"Cart Total: {cart_total} - total items: {len(cart['items'])}")
     print("\n")
 
